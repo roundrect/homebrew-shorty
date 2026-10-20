@@ -2,10 +2,10 @@ cask "shorty" do
   version "0.1.0"
   sha256 "1bf2e7eeedcfa80193cfe357c1dcadef17236d406af0e90ff4cbf14f29215b13"
 
-  url "https://github.com/johnoscott/shorty/releases/download/v#{version}/Shorty-#{version}.dmg"
+  url "https://github.com/roundrect/shorty/releases/download/v#{version}/Shorty-#{version}.dmg"
   name "Shorty"
   desc "Manage menu keyboard shortcuts and app hotkeys from one file"
-  homepage "https://github.com/johnoscott/shorty"
+  homepage "https://github.com/roundrect/shorty"
 
   livecheck do
     url :url
