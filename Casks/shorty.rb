@@ -1,6 +1,6 @@
 cask "shorty" do
-  version "0.1.0"
-  sha256 "1bf2e7eeedcfa80193cfe357c1dcadef17236d406af0e90ff4cbf14f29215b13"
+  version "0.2.27"
+  sha256 "aae9b58113715a98ad52802afe8f3d4a509a4fa3ba0b6ce45a7b3f4787405707"
 
   url "https://github.com/roundrect/shorty/releases/download/v#{version}/Shorty-#{version}.dmg"
   name "Shorty"
