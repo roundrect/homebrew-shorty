@@ -1,17 +1,13 @@
-# Homebrew tap for Shorty
+# Moved: use roundrect/tap
 
-[Shorty](https://github.com/roundrect/shorty) manages macOS menu keyboard shortcuts and app
-hotkeys from one file, with a menu bar editor and a `shorty` command.
+Shorty's cask now lives in RoundRect's single tap, [roundrect/homebrew-tap](https://github.com/roundrect/homebrew-tap), with
+every RoundRect app:
 
 ```sh
-brew install --cask roundrect/shorty/shorty
+brew tap roundrect/tap
+brew trust roundrect/tap
+brew install --cask roundrect/tap/shorty
 ```
 
-Requires macOS 15 (Sequoia) or later. The cask installs `Shorty.app` and links the `shorty`
-command-line tool.
-
-## Releasing a new version
-
-In the Shorty repository: `NOTARY_PROFILE=<profile> make release VERSION=x.y.z`, attach
-`dist/Shorty-x.y.z.dmg` to GitHub release `vx.y.z`, then update `version` and `sha256` in
-`Casks/shorty.rb` here (or `brew bump-cask-pr --version x.y.z roundrect/shorty/shorty`).
+An install from this tap moves there on its own at the next `brew update` (`tap_migrations.json`). Then
+`brew untap roundrect/shorty`.
